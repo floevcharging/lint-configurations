@@ -6,6 +6,7 @@ formats:
 extends:
   - spectral:oas
   - spectral:asyncapi
+  - https://raw.githubusercontent.com/floevcharging/lint-configurations/main/spectral/standard-ruleset.yml
 rules:
   asyncapi-info-contact: "off"
   asyncapi-info-contact-properties: "off"
@@ -23,3 +24,5 @@ rules:
   oas3-api-servers: "off"
   oas3-unused-component: "off"
   openapi-tags: "off"
+  servers-property-in-root-required: "off"
+  tags-property-in-root-required: "off"

@@ -6,6 +6,7 @@ formats:
 extends:
   - spectral:oas
   - spectral:asyncapi
+  - https://raw.githubusercontent.com/floevcharging/lint-configurations/main/spectral/standard-ruleset.yml
 rules:
   asyncapi-info-contact: error
   asyncapi-info-contact-properties: error
