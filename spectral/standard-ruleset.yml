@@ -833,7 +833,7 @@ rules:
           - default
 
   # Rules for casing
-  enum-values-pascal-case:
+  enum-values-screaming-snake-case:
     given:
       - "#Enum_Values"
     message: enum values must be in SCREAMING_SNAKE_CASE
