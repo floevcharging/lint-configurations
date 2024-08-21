@@ -1228,6 +1228,7 @@ rules:
   asyncapi-server-security: warn
   asyncapi-server-variables: warn
   asyncapi-tag-description: warn
+  asyncapi-tags: "off"
   asyncapi-tags-alphabetical: warn
   asyncapi-tags-uniqueness: error
   asyncapi-unused-components-server: warn
@@ -1239,7 +1240,6 @@ rules:
   asyncapi-info-license: error
   asyncapi-info-license-url: error
   asyncapi-servers: error
-  asyncapi-tags: error
   asyncapi-unused-components-schema: error
   contact-properties: error
   info-contact: error

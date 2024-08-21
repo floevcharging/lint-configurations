@@ -14,7 +14,6 @@ rules:
   asyncapi-info-license: error
   asyncapi-info-license-url: error
   asyncapi-servers: error
-  asyncapi-tags: error
   asyncapi-unused-components-schema: error
   contact-properties: error
   info-contact: error
