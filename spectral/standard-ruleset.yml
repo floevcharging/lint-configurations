@@ -801,13 +801,6 @@ rules:
     then:
       field: "201"
       function: truthy
-  put-response-204:
-    message: A PUT operation should have a 204 status code for the response
-    severity: warn
-    given: "$.paths[*].put.responses"
-    then:
-      field: "204"
-      function: truthy
   use-standard-response-codes:
     message: Response codes must be limited to a small predefined set of HTTP status codes
     severity: error
@@ -826,6 +819,7 @@ rules:
           - "404"
           - "405"
           - "406"
+          - "408"
           - "409"
           - "411"
           - "415"
