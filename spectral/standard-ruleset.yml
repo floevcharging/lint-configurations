@@ -1126,12 +1126,12 @@ rules:
                   - maximum
   owasp:api4:2023-string-limit:
     description: String size should be limited to mitigate resource exhaustion
-      attacks. This can be done using `maxLength`, `format`, `enum` or `const`.
+      attacks. This can be done using `maxLength`, `format`, or `enum`.
       We do not allow more than 1 to be set because that will cause a conflict between
       the serializer and the validator.
     given:
       - "#All_Strings"
-    message: Schema of type string must specify 1 (and only 1) of maxLength, enum, format, or const.
+    message: Schema of type string must specify 1 (and only 1) of maxLength, enum, or format.
     severity: error
     then:
       function: xor
@@ -1140,7 +1140,6 @@ rules:
           - format
           - maxLength
           - enum
-          - const
   owasp:api7:2023-concerning-url-parameter:
     description: |-
       Using external resource based on user input for webhooks, file fetching from URLs, custom SSO, URL previews, or redirects, can lead to a wide variety of security issues.
