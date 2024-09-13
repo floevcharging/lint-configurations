@@ -265,6 +265,7 @@ rules:
           values:
             - float
             - double
+            - decimal
   info-title-required:
     description: |
       The `info` object must have a `title` property defined.
